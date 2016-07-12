@@ -2,11 +2,10 @@ package com.alexbt.solr;
 
 import org.apache.solr.client.solrj.beans.Field;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.solr.core.mapping.SolrDocument;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 
-
-@JsonInclude(JsonInclude.Include.NON_NULL)
+@SolrDocument
 public class Model {
 	
 	@Id
